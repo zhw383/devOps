@@ -30,7 +30,7 @@ class tsdbApi(object):
 		endTime=datetime.datetime.combine(datetime.date.today()+ datetime.timedelta(days=-1), datetime.time.max)
 		startTimeStamp1=int(time.mktime(startTime.timetuple()))
 		endTimeStamp1=int(time.mktime(endTime.timetuple()))
-		tsdbUrl='http://183.36.111.59:4242/api/query?start={startTimeStamp}&end={endTimeStamp}&m={metric}{{sPlatform={platform},line={line}}}'
+		tsdbUrl='http://ip:4242/api/query?start={startTimeStamp}&end={endTimeStamp}&m={metric}{{sPlatform={platform},line={line}}}'
 		tsdbApiUrl=tsdbUrl.format(startTimeStamp=startTimeStamp1,endTimeStamp=endTimeStamp1,platform=self.platform,line=self.line,metric=self.metric)
 		print "tsdbApiUrl=",tsdbApiUrl
 		r=requests.get(tsdbApiUrl)
@@ -106,11 +106,11 @@ def writeFile():
 def sendmail():
 	# 第三方 SMTP 服务
 	mail_host="smtp.yy.com"  #设置服务器
-	mail_user="yy-huya-voice@yy.com"    #用户名
-	mail_pass="Huya2017"   #口令
-	sender = 'yy-huya-voice@yy.com'
-	receivers = ['zhouhuanwen@yy.com','554290721@qq.com']  # 接收邮件，可设置为你的QQ邮箱或者其他邮箱
-	#receivers = ['zhouhuanwen@yy.com','chenyi1@yy.com','weiwenhan@yy.com','zhangguanshi@yy.com']  # 接收邮件，可设置为你的QQ邮箱或者其他邮箱
+	mail_user="554290721@qq.com"    #用户名
+	mail_pass=""   #口令
+	sender = '554290721@qq.com'
+	receivers = ['','554290721@qq.com']  # 接收邮件，可设置为你的QQ邮箱或者其他邮箱
+	
 	#邮件内容
 	# mail_content=get_tsdb(platform,line)
 	f=open('./mailContent.txt','r')
@@ -123,7 +123,7 @@ def sendmail():
 	#增加多个收件人
 	for receiver in receivers:
 		message['To'] =  Header(receiver,'utf-8')
-	subject = '虎牙直播移动端质量数据日报'
+	subject = '移动端质量数据日报'
 	message['Subject'] = Header(subject, 'utf-8')
 	try:
 	    smtpObj = smtplib.SMTP()
