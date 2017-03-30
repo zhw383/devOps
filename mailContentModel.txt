@@ -1,0 +1,19 @@
+<p>注1：此邮件每天自动推送，体现移动端上报的核心业务质量</p>
+<p>注2：统计时段:[STARTTIME]-[ENDTIME]</p>
+<p>指标：感官卡比例</p>
+<table border="3" width="600">
+<tr bgcolor="#A9CCE3" ><td>移动端</td><td>线路</td><td>Max</td><td>Avg</td><td>Min</td><td>Sum</td></tr>
+BADQUALITY
+</table>
+
+<table border="3" width="600">
+<p>指标：网络卡比例</p>
+<tr bgcolor="#A9CCE3" ><td>移动端</td><td>线路</td><td>Max</td><td>Avg</td><td>Min</td><td>Sum</td></tr>
+NETQUALITY
+</table>
+
+<table border="3" width="600">
+<p>指标：视频加载时间</p>
+<tr bgcolor="#A9CCE3" ><td>移动端</td><td>线路</td><td>Max(ms)</td><td>Avg(ms)</td><td>Min(ms)</td><td>Sum(ms)</td></tr>
+LOADTIME
+</table>

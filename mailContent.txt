@@ -1,0 +1,19 @@
+<p>注1：此邮件每天自动推送，体现移动端上报的核心业务质量</p>
+<p>注2：统计时段:[2017-03-28  00:00:00]-[2017-03-28  23:59:59]</p>
+<p>指标：感官卡比例</p>
+<table border="3" width="600">
+<tr bgcolor="#A9CCE3" ><td>移动端</td><td>线路</td><td>Max</td><td>Avg</td><td>Min</td><td>Sum</td></tr>
+<tr><td>adr</td><td>0</td><td>20.48 %</td><td>3.19 %</td><td>0.72 %</td><td>13765.09 %</td></tr><tr><td>ios</td><td>0</td><td>53.97 %</td><td>3.85 %</td><td>0.00 %</td><td>16626.04 %</td></tr>
+</table>
+
+<table border="3" width="600">
+<p>指标：网络卡比例</p>
+<tr bgcolor="#A9CCE3" ><td>移动端</td><td>线路</td><td>Max</td><td>Avg</td><td>Min</td><td>Sum</td></tr>
+<tr><td>adr</td><td>0</td><td>22.41 %</td><td>2.95 %</td><td>0.17 %</td><td>12751.32 %</td></tr><tr><td>ios</td><td>0</td><td>34.00 %</td><td>0.66 %</td><td>0.00 %</td><td>2856.67 %</td></tr>
+</table>
+
+<table border="3" width="600">
+<p>指标：视频加载时间</p>
+<tr bgcolor="#A9CCE3" ><td>移动端</td><td>线路</td><td>Max(ms)</td><td>Avg(ms)</td><td>Min(ms)</td><td>Sum(ms)</td></tr>
+<tr><td>adr</td><td>0</td><td>59563</td><td>798</td><td>373</td><td>3448049</td></tr><tr><td>ios</td><td>0</td><td>39554</td><td>1215</td><td>294</td><td>5248816</td></tr>
+</table>
